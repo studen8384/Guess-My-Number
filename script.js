@@ -32,6 +32,7 @@ document.querySelector(".check").addEventListener("click", function(){
 })
 
 document.querySelector(".again").addEventListener("click",function(){
+    secretNum = Math.trunc(Math.random()*20)+1
     document.querySelector(".message").textContent = "Start guessing..."
     document.querySelector(".guess").value = ""
     document.querySelector("body").style.backgroundColor = "#222"
